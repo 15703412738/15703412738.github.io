@@ -1,0 +1,563 @@
+header{
+	
+}
+
+.header-top{
+	width: 100%;
+	height: 40px;
+	background: #444444;
+
+}
+
+.header-top main{
+	
+	height: 100%;
+	margin: 0 auto;
+	font-size: 12px;
+	text-align: right;
+	line-height: 40px;
+	color: #A8A8AA;
+}
+
+
+.header-nav{
+	width: 100%;
+	height: 44px;
+	background: #000;
+}
+.header-nav main{
+	
+	height: 100%;
+	margin: 0 auto;
+	/* background: blue; */
+}
+.header-nav main ul{
+	text-align: justify;
+	line-height: 44px;
+	color: #fff;
+}
+/* 解决text-align: justify;问题 */
+ .header-nav main ul:after{
+    content: "";
+	display: inline-block;
+	height: 0px;
+	width: 100%;
+}
+.header-nav main ul li{
+	
+	display: inline-block;
+}
+.banner{
+	width: 100%;
+	height: 550px;
+	position: relative;
+
+    
+	
+}
+.banner-box a{
+	display: block;
+	width: 100%;
+	height: 100%;
+
+}
+
+.banner-box{
+	width: 100%;
+	height: 550px;
+
+	}
+
+
+.anniuzuo,.anniuyou{
+	width: 10%;
+	height: 100%;
+	
+	position: absolute;
+	top: 0px;
+	
+	margin: auto;
+
+}
+.anniuzuo{
+	left: 0px;
+}
+.anniuyou{
+	right: 0px;
+}
+.anniu1,.anniu2{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: #bbb;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	text-align: center;
+	line-height: 64px;
+	font-size: 36px;
+	color: #fff;
+}
+.anniu2{
+	right: 10px;
+}
+.anniu1{
+	left: 10px;
+}
+.lunbo{
+	width: 100%;
+	height: 25px;
+	/* background: red; */
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+.lunbo li{
+	display: inline-block;
+	width: 50px;
+	height: 3px;
+	background: #DCDCDC;
+	margin: 0 auto;
+}
+.lunbo li:nth-child(2){
+	background: #808080;
+}
+.lunbo .lunbotiao{
+	width: 170px;
+	height: 100%;
+	margin: 0 auto;
+}
+.banner-xia{
+	width: 100%;
+	height: 204px;
+
+}
+.banner-xia-box a{
+	display: block;
+	width: 100%;
+	height: 100%;
+
+}
+
+.banner-xia-box{
+	
+	height: 200px;
+	/* background: red; */
+	float: left;
+	border:1px solid #bbb;
+	
+
+}
+.dibu{
+	width: 100%;
+	height: 422px;
+
+}
+.dibu-bankuai{
+	width: 90%;
+	height: 401px;
+	margin: 0 auto;
+
+}
+.dibu-bankuai1{
+	width: 100%;
+	height:50px;
+
+	float: left;
+
+	margin-top: 10px;
+	margin-left: 22px;
+	line-height: 50px;
+
+	border-bottom: 1px solid #bbb;
+}
+.dibu-bankuai2{
+	width: 100%;
+	height: 245px;
+	margin-top: 10px;
+	margin-left: 22px;
+	
+
+
+
+}
+.dibu-bankuai3{
+	width: 100%;
+	height: 24px;
+	float: left;
+    margin-top: 30px;
+	margin-left: 22px;
+    overflow: hidden;
+	line-height: 24px;
+	border-bottom: 1px solid #bbb;
+}
+.dibu-bankuai4{
+	width:100%;
+	height: 27px;
+	float: left;
+
+	margin-left: 22px;
+	margin-top: 10px;
+
+	
+}
+.dibu-bankuai5{
+	width: 100%;
+	height: 17px;
+	float: left;
+
+	margin-left: 22px;
+	margin-top: 5px;
+	
+}
+
+.dibu-bk2-2{
+	width: 20%;
+	height: 225px;
+	
+	float: left;
+	margin-top: 10px;
+	
+}
+.dibu-bk2-2 ul{
+      font-size: 12px;
+      color: #333333;
+      margin-bottom: 10px;
+      font-weight: bold;
+}
+.dibu-bk2-2 li{
+	  height: 20px;
+      font-size: 12px;
+      margin-top: 2px;
+      color: #555555;
+
+}
+.shangwu{
+	margin-top: 30px;
+}
+.dibu-zi{
+	font-size: 12px;
+	color: #bbb;
+}
+.dibu-zi-dt{
+	font-size: 12px;
+	color: #bbb;
+	float: left;
+}
+.dibu-zi1{
+	font-size: 12px;
+	color: #000;
+}
+
+.xiaodibu ul{
+      font-size: 12px;
+      color: #333333;
+      margin-bottom: 10px;
+      font-weight: bold;
+}
+ .dibu-zi a{
+	color: blue;
+}
+.dibu-zi a:hover{
+	text-decoration: underline blue;
+}
+.dibu-bankuaileft{
+	width: 260px;
+	height: 17px;
+	float: left;
+	
+	line-height: 17px;
+	margin-top: 3px;
+}
+.china{
+	width: 15px;
+	height: 15px;
+	
+	float: left;
+	margin-right: 2px;
+
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.dibu-bankuaizhong{
+	width: 320px;
+	height: 20px;
+	float: left;
+
+	margin-top: 3px;
+	margin-left: 6px;
+	line-height: 20px;
+}
+.dibu-bankuairight{
+	width: 50px;
+	height: 22px;
+	float: right;
+	
+	margin-top: 3px;
+	line-height: 22px;
+}
+
+
+.xiaodibu{
+	width: 90%;
+	
+	margin: 0 auto;
+	overflow: hidden;
+}
+.xiaodibu-biaoti{
+	width: 100%;
+	height: 50px;
+	
+	margin: 0 auto;
+	line-height: 50px;
+	border-bottom: 1px solid #bbb;
+}
+.xiaodibu ul{
+	width: 100%;
+	height: 38px;
+	margin: 0 auto;
+
+	line-height: 38px;
+	border-bottom: 1px solid #bbb;
+}
+.xiaofooter{
+	width: 100%;
+	height: 148px;
+}
+.xiaofooter-box{
+	width: 100%;
+	height: 23px;
+	
+	line-height: 23px;
+	margin-top: 10px;
+}
+.xiaofooter-box1{
+	width: 100%;
+	height: 17px;
+	
+	line-height: 17px;
+	margin-top: 15px;
+}
+.xiaofooter-box2{
+	width: 100%;
+	height: 20px;
+
+	line-height: 20px;
+	margin-top: 5px;
+}
+.jiahao{
+	float:right;
+	font-size: 14px;
+	margin-right: 10px;
+
+}
+
+.banner-xia div:nth-child(1){
+     border-left:0px solid #bbb;
+}
+.banner-xia div:nth-child(4){
+     border-right:0px solid #bbb;
+}
+
+@media screen and (max-width: 768px){
+	  .header-nav main .min-nav{
+	  	display: block;
+	  }
+
+	  .header-nav main .max-nav{
+	  	display: none;
+	  }
+
+	  .xiaodibu{
+	  	display: block;
+	  }
+
+	 .dibu{
+	  	display: none;
+	  }
+
+	  .banner-box{
+	 	background-image: url('../image/macbookpro_small.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: 100% auto;
+	   
+	 }
+	 .banner-xia-box{
+	 	width: 100%;
+	 }
+	 .banner-xia .tu1{
+	 	background-image: url('../img/tu1small.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu2{
+	 	background-image: url('../img/tu2_small.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu3{
+	 	background-image: url('../img/tu3small.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu4{
+	 	background-image: url('../img/tu4_small.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+
+
+}
+
+
+@media screen and (min-width: 768px){
+	  .header-nav main .min-nav{
+	  	display: none;
+	  }
+
+	  .header-nav main .max-nav{
+	  	display: block;
+	  }
+
+
+	   .xiaodibu{
+	  	display: none;
+	  }
+
+	 .dibu{
+	  	display: block;
+	  }
+
+
+	  
+}
+
+
+@media screen and (min-width: 1024px){
+	.header-top main{
+	  max-width: 976px;
+	
+     }
+	.header-nav main{
+	     max-width: 1024px;
+
+	 }
+	 .banner-box{
+	 	background-image: url('../image/macbookpro_large.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center bottom;
+	    background-size: 100%;
+	   
+	 }
+	 .banner-xia-box{
+	 	width: 25%;
+	 	
+	 }
+	 .banner-xia .tu1{
+	 	background-image: url('../img/tu1large.jpg');
+	 	background-repeat: no-repeat;
+	      background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu2{
+	 	background-image: url('../img/tu2large.jpg');
+	 	background-repeat: no-repeat;
+	     background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu3{
+	 	background-image: url('../img/tu3_large.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu4{
+	 	background-image: url('../img/tu4large.jpg');
+	 	background-repeat: no-repeat;
+	   background-position: center center;
+	    background-size: cover;
+	 }
+
+
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+	.header-top main{
+	    padding: 0 24px;
+
+         }
+    .header-nav main{
+	    padding: 0 22px;
+
+         }
+    .banner-box{
+	 	background-image: url('../image/macbookpro_medium.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center bottom;
+	    background-size: 100% auto;
+	   
+	 }
+
+
+
+
+	 
+
+	 
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+	 .banner-xia-box{
+	 	width: 50%;
+	 }
+
+	 .banner-xia .tu1{
+	 	background-image: url('../img/tu1medium.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu2{
+	 	background-image: url('../img/tu2medium.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu3{
+	 	background-image: url('../img/tu3medium.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+	 .banner-xia .tu4{
+	 	background-image: url('../img/tu4medium.jpg');
+	 	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	 }
+
+
+}
+
+
+
+
+
+
+
+
+

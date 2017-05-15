@@ -1,0 +1,333 @@
+ body{
+ 	background: #f5f6fa;
+ }
+
+ .banner{
+	width: 100%;
+	height: 4.1rem;
+	background: yellow;
+	background: url('../img/banner_02.png')
+	center center;
+	background-size: cover;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.ziti a{
+	color: #000;
+}
+.header{
+	width: 100%;
+	height: 0.89rem;
+	background: #007be3;
+	position: fixed;
+	top: 0px;
+    left: 0px;
+    margin: auto;
+}
+.header-logo{
+	width: 0.7rem;
+    height: 0.67rem;
+
+    background: url('../img/logo.png') center center no-repeat;
+    float: left;
+    margin-left: 2.5rem;
+    margin-top: 0.1rem;
+    
+    background-size: 0.7rem;
+
+}
+.header-zi{
+	font-size: 0.38rem;
+    color: #fff;
+    line-height: 0.89rem;
+    float: left;
+   font-weight: bold;
+    margin-left: 0.16rem;
+}
+.tupiandaohang{
+	width: 100%;
+	height: 4.84rem;
+	
+	padding: 0.28rem 0.2rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.tupiandaohang ul{
+	width: 100%;
+	height: 1.96rem;
+	
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+   
+
+}
+
+
+.tupiandaohang li{
+	width: 1.55rem;
+	height: 1.96rem;
+
+	float: left;
+    
+}
+.tupian{
+	width: 1.55rem;
+	height: 1.56rem;
+	border-radius: 0.25rem;
+	background: #fff;
+	margin-bottom: 0.08rem;
+	padding-top: 0.3rem;
+}
+.ziti{
+	font-size: 0.26rem;
+	text-align: center;
+	font-family: "苹方";
+}
+.xiaotupianhezi{
+	width: 1.05rem;
+	height: 1.05rem;
+
+	margin:0 auto;
+}
+.xiaotupianhezi.a{
+	background: #fff url("../img/shouye6.png") 0 0 no-repeat;
+    background-size: 2rem;
+}
+.xiaotupianhezi.b{
+	background: #fff url("../img/shouye6.png") -0.98rem 0rem no-repeat;
+    background-size: 2rem;
+}
+.xiaotupianhezi.c{
+	background: #fff url("../img/shouye6.png") 0.15rem -1.1rem no-repeat;
+    background-size: 2rem;
+}
+.xiaotupianhezi.d{
+	background: #fff url("../img/ufo.png") no-repeat;
+    background-size: 100%;
+}
+.xiaotupianhezi.e{
+	background: #fff url("../img/shouye6.png") -0.98rem -1.1rem  no-repeat;
+    background-size: 2rem;
+}
+.xiaotupianhezi.f{
+	background: #fff url("../img/shouye6.png") 0rem -3.3rem no-repeat;
+    background-size: 2rem;
+}
+.xiaotupianhezi.g{
+	background: #fff url("../img/shouye6.png") 0.1rem -2.2rem no-repeat;
+    background-size: 2rem;
+}
+.xiaotupianhezi.h{
+	background: #fff url("../img/shouye6.png") -0.98rem -2.2rem  no-repeat;
+    background-size: 2rem;
+}
+
+.fuwu-bt{
+	width: 100%;
+	height: 0.65rem;
+	line-height: 0.65rem;
+	background: #fff;
+}
+.fuwu-bt-zi{
+	font-size: 0.24rem;
+	color: #1378ba;
+	text-align: center;
+}
+.fuwunr{
+	width: 100%;
+	height: 2.2rem;
+	background: #fff;
+}
+.fuwunr-left{
+	width: 3.75rem;
+	height: 2.18rem;
+	
+	float: left;
+	border: 0.02rem solid #e8e8e8;
+}
+.fuwunr-right{
+	width: 3.75rem;
+	height: 2.18rem;
+
+	float: left;
+	border-top: 0.02rem solid #e8e8e8;
+	border-bottom: 0.02rem solid #e8e8e8;
+	border-right: 0.02rem solid #e8e8e8;
+	
+}
+.fuwunr-zi{
+	width: 1.8rem;
+	height: 100%;
+	
+	float: left;
+     padding:0.4rem 0.15rem ;
+}
+.fuwunr-tu{
+	width: 1.5rem;
+	height: 1.32rem;
+	
+	float: right;
+}
+h2{
+	font-size: 0.24rem;
+    font-weight: normal;
+    color: #000000;
+    /* text-align: center; */
+   padding-bottom: 0.1rem;
+}
+h3{
+	font-size: 0.18rem;
+    font-weight: normal;
+    color: #999999;
+
+}
+.fuwunr-tu.a{
+	background: #fff url("../img/shouye6.png") 0 -4.4rem no-repeat;
+    background-size: 2rem;
+    margin-top: 0.35rem;
+}
+.fuwunr-tu.b{
+	background: #fff url("../img/shouye6.png") 0 -5.9rem no-repeat;
+    background-size: 2rem;
+    margin-top: 0.35rem;
+}
+.dibu{
+	width: 100%;
+	height: 1.4rem;
+	background: #fff;
+	float: left;
+	margin-bottom: 0.9rem;
+}
+.dibu-box{
+	width: 33.33%;
+	height: 100%;
+    padding: 0.38rem 0.15rem;
+	float: left;
+	border-right: 0.02rem solid #e8e8e8;
+}
+.dibu-box-tu{
+	width: 0.6rem;
+	height: 0.6rem;
+	
+	float: left;
+	
+}
+.dibu-box-zi{
+	width: 1.5rem;
+	height: 0.6rem;
+	
+	float: left;
+	padding-left: 0.1rem;
+}
+.dibu-box-tu.a{
+	background: url('../img/shouye_01.png') center center no-repeat;
+	background-size: cover;
+}
+.dibu-box-tu.b{
+	background: url('../img/shouye_02.png') center center no-repeat;
+	background-size: cover;
+}
+.dibu-box-tu.c{
+	background: url('../img/shouye_03.png') center center no-repeat;
+	background-size: cover;
+}
+.footer{
+	width: 100%;
+	height: 0.9rem;
+	
+	position: fixed;
+	bottom: 0rem;
+	left: 0rem;
+	margin: auto;
+}
+.footer-left{
+	width: 2.25rem;
+	height: 0.8rem;
+	/* line-height: 0.8rem; */
+	background: #e7e7e7;
+	position: absolute;
+	bottom: 0rem;
+	right: 0rem;
+	margin: auto;
+
+	text-align: center;
+	line-height: 0.8rem;
+}
+.footer-right{
+	width: 2.25rem;
+	height: 0.8rem;
+	background: #e7e7e7;
+	line-height: 0.8rem;
+	position: absolute;
+	bottom: 0rem;
+	left: 0rem;
+	margin: auto;
+	text-align: center;
+}
+.footer-zhong{
+	width: 3rem;
+	height: 0.9rem;
+	background: #e7e7e7;
+	position: absolute;
+	right: 0rem;
+	left: 0rem;
+	margin: auto;
+	background-color: #ff8d12;
+    border-radius: 0.08rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.9rem;
+
+}
+.footer-zi{
+	font-size: 0.32rem;
+	color: #000;
+
+}
+.footer-zi1{
+	font-size: 0.32rem;
+	color: #fff;
+	font-weight: bold;
+
+}
+.tu{
+ 	width: 0.35rem;
+ 	height: 0.32rem;
+ 	background: yellow;
+ 	position: absolute;
+ 	top: 0.28rem;
+ 	left: 0.1rem;
+ 	margin: auto;
+ 	float: left;
+   
+ 	
+
+ }
+ .tu.c{
+ 	background: url('../img/qq.png') center center no-repeat;
+    background-size: cover;
+ }
+ .tu.b{
+ 	background: url('../img/shouye6.png') -1.6rem -5.3rem no-repeat;
+ 	background-size: 2rem;
+
+ }
+.tu.a{
+	position: absolute;
+ 	top: 0.28rem;
+ 	left: 0.3rem;
+ 	margin: auto;
+ 	float: left;
+ 	background: url('../img/shouye6.png') -1.6rem -4.78rem no-repeat;
+ 	background-size: 2rem;
+
+}

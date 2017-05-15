@@ -1,0 +1,97 @@
+body{
+	background: #f0f0f0;
+}
+
+
+
+
+
+.header{
+	width: 100%;
+	height: 1.1864rem;
+	background: #F7F7F8;
+	border-bottom: 0.02rem solid #c8c8c8;
+	line-height: 1.1864rem;
+}
+.biaoti{
+	font-size: 0.4rem;
+	font-weight: bolder;
+	text-align: center;
+}
+.zhanghu{
+	width: 100%;
+	height: 1.2662rem;
+	background: #fff;
+	line-height: 1.2662rem;
+	
+}
+.zhanghuming{
+	font-size: 0.32rem;
+	width: 2.10rem;
+	height: 0.76rem;
+	text-align: center;
+	margin-left: 0.08rem;
+
+}
+.zhanghukuang{
+	width: 6.04rem;
+	
+	border: 0px;
+
+}
+.zhanghu.a{
+	margin-top: 0.3rem;
+	border-bottom: 1px solid #ddd;
+
+}
+.beijng{
+	width: 100%;
+	height: 10.1184rem;
+	
+}
+.anniu{
+	width: 7rem;
+	height: 1.25rem;
+	background:  #C40000;
+	margin-left: 0.2rem;
+	margin-top: 0.3rem;
+	font-size: 0.32rem;
+	color:#d4d4d4;
+}
+.xiaokuangkuang{
+	width: 7rem;
+	height: 0.5rem;
+	
+	margin-left: 0.21rem;
+	margin-top: 0.2rem;
+}
+.xiaozizi{
+	width: 2rem;
+	height: 0.5rem;
+	float: left;
+	line-height: 0.5rem;
+	
+}
+.xiaozizi.b{
+	float: right;
+}
+.duanxinkuang{
+	width:2.6rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	
+	margin: 0 auto;
+	margin-top: 0.6rem;
+	border: 1px solid #f40;
+}
+.hong{
+	color: #c40000;
+	font-size: 0.32rem;
+}
+.hong.c{
+	text-align: right;
+}
+.hong.d{
+	color: #f40;
+	text-align: center;
+}
