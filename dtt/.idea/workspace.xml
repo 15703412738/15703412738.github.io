@@ -56,17 +56,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xiaomi/css/2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="265" column="23" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="23" />
+            <state relative-caret-position="210">
+              <caret line="980" column="13" selection-start-line="980" selection-start-column="13" selection-end-line="980" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiaomi/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="515">
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/tm/main.js" />
         <option value="$PROJECT_DIR$/tm/css/main.css" />
         <option value="$PROJECT_DIR$/xiaomi/2.html" />
-        <option value="$PROJECT_DIR$/xiaomi/css/2.css" />
         <option value="$PROJECT_DIR$/xiaomi/main.js" />
+        <option value="$PROJECT_DIR$/xiaomi/css/2.css" />
       </list>
     </option>
   </component>
@@ -213,12 +213,12 @@
       <workItem from="1494808189576" duration="4734000" />
       <workItem from="1494862005585" duration="1223000" />
       <workItem from="1494916603018" duration="2761000" />
-      <workItem from="1494931505037" duration="4072000" />
+      <workItem from="1494931505037" duration="4538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19865000" />
+    <option name="totallyTimeSpent" value="20331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
@@ -386,18 +386,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaomi/css/2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="265" column="23" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiaomi/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="118" column="57" selection-start-line="118" selection-start-column="57" selection-end-line="118" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaomi/css/2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="980" column="13" selection-start-line="980" selection-start-column="13" selection-end-line="980" selection-end-column="13" />
           <folding />
         </state>
       </provider>
