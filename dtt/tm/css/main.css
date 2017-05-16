@@ -883,6 +883,7 @@ img{
 	overflow: hidden;
 	transition: all 1s;
 	margin-left:6px;
+	z-index: 99999;
 }
 .guding01{
 	width: 36px;
@@ -2297,24 +2298,25 @@ dd{
 .guding01.btn:nth-child(7).active{
 	background:#DD2727;
 }*/
-.btn:nth-child(1).active{
+.btn:nth-child(2).active{
 	background: #EA5F8D;
 }
-.btn:nth-child(2).active{
-	background: #0AA6E8;
-}
 .btn:nth-child(3).active{
-	background: #64C333;
+	background: #0AA6E8;
+	/*background: red;*/
 }
 .btn:nth-child(4).active{
-	background: #F15453;
+	background: #64C333;
 }
 .btn:nth-child(5).active{
-	background: #19C8A9;
+	background: #F15453;
 }
 .btn:nth-child(6).active{
-	background: #F7A945;
+	background: #19C8A9;
 }
 .btn:nth-child(7).active{
+	background: #F7A945;
+}
+.btn:nth-child(8).active{
 	background: #DD2727;
 }

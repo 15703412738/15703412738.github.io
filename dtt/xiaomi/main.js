@@ -100,11 +100,22 @@ prveb.onmouseout=function () {
     prveb.style.color="#ccc";
 }
 
-console.log($(".banner aside .right-zi li"))
-$(".banner aside .right-zi li").each(function (i,e) {
+console.log($(".dianji"))
+console.log($(".right-child.a1"))
+$(".dianji").each(function (i,e) {
     $(this).hover(function () {
         $(".right-child.a1").eq(i).show();
+        $(this).css("background","#ff6700");
     },function () {
         $(".right-child.a1").eq(i).hide();
+        $(this).css("background","");
+    })
+})
+//选购
+$(".right-child-nr-xuangou").each(function (i,v) {
+    $(this).hover(function () {
+        $(this).css({"background":"#ff6700","color":"#fff"});
+    },function () {
+        $(this).css({"background":"#fff","color":"#ff6700"});
     })
 })

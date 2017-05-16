@@ -214,9 +214,9 @@ window.onscroll=function () {
 //固定栏颜色的改变
 
 var colorarr1=["#EA5F8D","#0AA6E8","#64C333","#F15453","#19C8A9","#F7A945","#DD2727"];
-console.log(colorarr1)
-console.log($(".guding01.btn"))
-console.log($(".floor"))
+// console.log(colorarr1)
+// console.log($(".guding01.btn"))
+// console.log($(".floor"))
 /*$(".guding01.btn").click(function () {
     var index=$(this).index();
     var ot= $(".floor").eq(index).offsetTop;
@@ -242,28 +242,31 @@ $(window).scroll(function () {
         })
     },200)
 })*/
-$(".guding01.btn").each(function (i,v) {
+
+$(".btn").each(function (i,v) {
     $(this).hover(function () {
-        $(this).css("background",colorArr2[i])
+        $(this).css("background",colorarr1[i])
     },function () {
         $(this).css("background","")
     }).click(function () {
         $(this).addClass("active").siblings().removeClass("active");
     })
 });
-
+console.log($(".btn:nth-child(8)"))
 var to;
 $(window).scroll(function () {
-    var st=$(this).scrollTop()+100;
+    var st=$(this).scrollTop()+50;
     clearInterval(to);
     to=setTimeout(tomove,200);
     function tomove() {
         $(".floor").each(function (i,v) {
             if($(window).scrollTop()<660){
-                $(".guding01.btn").removeClass("active");
+                $(".btn").removeClass("active");
             }
             if(st>$(v).offset().top){
-                $(".guding01.btn").eq(i).addClass("active").siblings().removeClass("active");
+                console.log($(v));
+                console.log($(".btn").eq(i))
+                $(".btn").eq(i).addClass("active").siblings().removeClass("active");
             }
         })
     }
@@ -272,7 +275,7 @@ $(window).scroll(function () {
 gdbtns.forEach(function (ele,index) {
     ele.onclick=function () {
         var top=floors[index].offsetTop;
-        console.log(top)
+        // console.log(top)
         window.animate(document.body,{scrollTop:top-50})
     }
 })
@@ -365,7 +368,7 @@ erwcice.onmouseout=function () {
 //侧栏
 console.log($(".celan li"))
 $(".celan li").each(function (i,e) {
-    console.log(e,$(this))
+    // console.log(e,$(this))
     
     $(this).hover(function () {
         $(".twocenav").eq(i).show();

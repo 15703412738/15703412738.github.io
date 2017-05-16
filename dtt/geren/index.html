@@ -110,28 +110,36 @@
 						<p class="xiaozi-skill">Photoshop</p>
 					</div>
 
-					<progress max="100" min="0" value="98" class="jindu" ></progress>
+					<div class="jindu">
+						<div class="jindu1"></div>
+					</div>
 					<div class="baifenbi">
 						<p class="xiaozi-skill">89%</p>
 					</div>
 					<div class="xiaobiaoti">
 						<p class="xiaozi-skill">Web Design</p>
 					</div>
-					<progress max="100" min="0" value="96" class="jindu"></progress>
+					<div class="jindu">
+						<div class="jindu2"></div>
+					</div>
 					<div class="baifenbi">
 						<p class="xiaozi-skill">95%</p>
 					</div>
 					<div class="xiaobiaoti">
 						<p class="xiaozi-skill">HTML5</p>
 					</div>
-					<progress max="100" min="0" value="91" class="jindu"></progress>
+					<div class="jindu">
+						<div class="jindu3"></div>
+					</div>
 					<div class="baifenbi">
 						<p class="xiaozi-skill">91%</p>
 					</div>
 					<div class="xiaobiaoti">
 						<p class="xiaozi-skill">Photoshop</p>
 					</div>
-					<progress max="100" min="0" value="95" class="jindu"></progress>
+					<div class="jindu">
+						<div class="jindu4"></div>
+					</div>
 					<div class="baifenbi">
 						<p class="xiaozi-skill">90%</p>
 					</div>
@@ -307,10 +315,17 @@
 			anchors: ['page1', 'page2', 'page3', 'page4'],
 			'navigation': true,
 			'navigationPosition': 'right',
-			'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple']
+			'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+			afterLoad:function (an,index) {
+				if(index==2){
+					$(".jindu1").css("width","89%");
+					$(".jindu2").css("width","95%");
+					$(".jindu3").css("width","91%");
+					$(".jindu4").css("width","90%");
+				}
+			}
 		})
 
-		$("progress").value=0;
 	})
 </script>
 </html>
