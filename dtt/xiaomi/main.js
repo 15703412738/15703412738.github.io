@@ -119,3 +119,31 @@ $(".right-child-nr-xuangou").each(function (i,v) {
         $(this).css({"background":"#fff","color":"#ff6700"});
     })
 })
+//为你推荐
+console.log($(".anniu.zuo"))
+console.log($(".weinituijian-box"))
+var num=0;
+$(".anniu.zuo").click(function () {
+    num++;
+    if(num>=3){
+        num=3;
+    }
+    var wl=-1226*num;
+    $(".weinituijian-box").css("marginLeft",wl+"px");
+})
+
+ $(".anniu.you").click(function () {
+     num-=1;
+     if(num<=0){
+         num=0;
+     }
+     var wl1=-1226*num;
+ $(".weinituijian-box").css("marginLeft",wl1+"px");
+
+ });
+//内容
+console.log($(".neirong-bankuai-box"))
+$(".neirong-bankuai-box").each(function (i,v) {
+
+})
+
