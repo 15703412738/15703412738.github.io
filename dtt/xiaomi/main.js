@@ -211,3 +211,22 @@ var dian3=document.querySelectorAll(".neirong-bankuai-box.d .nrbk-lunbo1 .nrbk-l
 var tushu3=document.querySelector(".neirong-bankuai-box.d .neirong-bankuai2-dabox");
 neirong(tushunext3,tushuprev3,tushu3,dian3)
 console.log(dian,dian1,dian2,dian3)
+
+
+$(".liebiao li").each(function (index,ele) {
+    $(ele).mouseover(function(){
+
+        $(".clearfix").eq(index).css("height","206px")
+    })
+    $(ele).mouseout(function(){
+        $(".clearfix").eq(index).css("height","0px")
+    })
+})
+console.log($(".clearfix"))
+
+//视频
+var video=document.querySelector("video");          //获取video标签
+var startbtn=document.querySelector(".shipin-bofangjiantou");
+startbtn.onclick=function () {
+    video.play();
+};
