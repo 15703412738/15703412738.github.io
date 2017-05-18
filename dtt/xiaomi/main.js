@@ -100,7 +100,6 @@ prveb.onmouseout=function () {
     prveb.style.color="#ccc";
 }
 
-console.log($(".dianji"))
 console.log($(".right-child.a1"))
 $(".dianji").each(function (i,e) {
     $(this).hover(function () {
@@ -120,7 +119,6 @@ $(".right-child-nr-xuangou").each(function (i,v) {
     })
 })
 //为你推荐
-console.log($(".anniu.zuo"))
 console.log($(".weinituijian-box"))
 var num=0;
 $(".anniu.zuo").click(function () {
@@ -142,8 +140,12 @@ $(".anniu.zuo").click(function () {
 
  });
 //内容
-console.log($(".neirong-bankuai-box"))
-$(".neirong-bankuai-box").each(function (i,v) {
-
+console.log($(".neirong-bankuai-dabox"));
+console.log($(".neirong-bankuai-jiantouyou"));
+var num3=0;
+$(".neirong-bankuai-jiantouyou").each(function (i,v) {
+    v.click(function () {
+        num3++;
+        $(".neirong-bankuai-dabox").eq(i).css("marginLeft",-296*num3+"px");
+    })
 })
-
