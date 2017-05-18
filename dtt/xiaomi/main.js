@@ -140,12 +140,74 @@ $(".anniu.zuo").click(function () {
 
  });
 //内容
-console.log($(".neirong-bankuai-dabox"));
+console.log($(".neirong-bankuai2-dabox"));
 console.log($(".neirong-bankuai-jiantouyou"));
 var num3=0;
 $(".neirong-bankuai-jiantouyou").each(function (i,v) {
     v.click(function () {
         num3++;
-        $(".neirong-bankuai-dabox").eq(i).css("marginLeft",-296*num3+"px");
+        $(".neirong-bankuai2-dabox").eq(i).css("marginLeft",-296*num3+"px");
     })
 })
+//内容
+function neirong(next,prev,rongqi,dian) {
+    var newbtn=dian[0];
+    dian.forEach(function (v,i) {
+        v.onclick=function () {
+            newbtn.style.background="#b0b0b0";
+            newbtn.style.border="2px solid #fff";
+            dian[i].style.background="#fff";
+            dian[i].style.border="2px solid #ff6700";
+
+            rongqi.style.marginLeft=-296*i+"px";
+            newbtn = dian[i]
+        }
+    })
+    var num=0;
+    next.onclick=function () {
+        num++;
+        if(num==dian.length){
+            num=dian.length-1;
+        }
+        newbtn.style.background="#b0b0b0";
+        newbtn.style.border="2px solid #fff";
+        dian[num].style.background="#fff";
+        dian[num].style.border="2px solid #ff6700";
+        newbtn = dian[num]
+        rongqi.style.marginLeft=-296*num+"px";
+    }
+    prev.onclick=function () {
+        num--;
+        if(num==-1){
+            num=0;
+        }
+        newbtn.style.background="#b0b0b0";
+        newbtn.style.border="2px solid #fff";
+        dian[num].style.background="#fff";
+        dian[num].style.border="2px solid #ff6700";
+        newbtn = dian[num]
+        rongqi.style.marginLeft=-296*num+"px";
+    }
+}
+var tushunext=document.querySelector(".neirong-bankuai-box.a .neirong-bankuai-jiantouyou");
+var tushuprev=document.querySelector(".neirong-bankuai-box.a .neirong-bankuai-jiantouzuo");
+var dian=document.querySelectorAll(".neirong-bankuai-box.a .nrbk-lunbo .nrbk-lunbo-yuan .nrbk-yuan");
+var tushu=document.querySelector(".neirong-bankuai-box.a .neirong-bankuai-dabox");
+neirong(tushunext,tushuprev,tushu,dian)
+
+var tushunext1=document.querySelector(".neirong-bankuai-box.b .neirong-bankuai-jiantouyou");
+var tushuprev1=document.querySelector(".neirong-bankuai-box.b .neirong-bankuai-jiantouzuo");
+var dian1=document.querySelectorAll(".neirong-bankuai-box.b .nrbk-lunbo1 .nrbk-lunbo-yuan .nrbk-yuan");
+var tushu1=document.querySelector(".neirong-bankuai-box.b .neirong-bankuai2-dabox");
+neirong(tushunext1,tushuprev1,tushu1,dian1)
+var tushunext2=document.querySelector(".neirong-bankuai-box.c .neirong-bankuai-jiantouyou");
+var tushuprev2=document.querySelector(".neirong-bankuai-box.c .neirong-bankuai-jiantouzuo");
+var dian2=document.querySelectorAll(".neirong-bankuai-box.c .nrbk-lunbo1 .nrbk-lunbo-yuan .nrbk-yuan");
+var tushu2=document.querySelector(".neirong-bankuai-box.c .neirong-bankuai2-dabox");
+neirong(tushunext2,tushuprev2,tushu2,dian2)
+var tushunext3=document.querySelector(".neirong-bankuai-box.d .neirong-bankuai-jiantouyou");
+var tushuprev3=document.querySelector(".neirong-bankuai-box.d .neirong-bankuai-jiantouzuo");
+var dian3=document.querySelectorAll(".neirong-bankuai-box.d .nrbk-lunbo1 .nrbk-lunbo-yuan .nrbk-yuan");
+var tushu3=document.querySelector(".neirong-bankuai-box.d .neirong-bankuai2-dabox");
+neirong(tushunext3,tushuprev3,tushu3,dian3)
+console.log(dian,dian1,dian2,dian3)

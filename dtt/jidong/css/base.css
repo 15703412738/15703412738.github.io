@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding:0;
+	text-decoration: none;
+	/* 去除图片下划线 */
+	box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: #999;
+}
+a:hover{
+	color: #f10215;
+}

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            margin: 0;
+            height: 100%;
+            font-family: "微软雅黑";
+        }
+        ul li input{
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        ul li span{
+            float: left;
+            width: 300px;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            line-height: 30px;
+        }
+        ul li time{
+            width: 200px;
+            height: 30px;
+            float: right;
+            font-size: 16px;
+            line-height: 30px;
+
+        }
+        ul li{
+            border-bottom: 1px dashed #ccc;
+           /* display: flex;
+            clear: both;*/
+        }
+        /*ul li:after{
+            content: "";
+            display: flex;
+            clear: both;
+
+        }*/
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .title{
+            width: 100%;
+            height: 100px;
+            background: pink;
+            line-height: 100px;
+            padding-left: 30px;
+            font-size: 30px;
+        }
+        .inputarea{
+            width: 100%;
+            height: 50px;
+        }
+        #text{
+            width: 300px;
+            height: 50px;
+            float: left;
+        }
+        #submit{
+           width: 150px;
+            height: 50px;
+            float: left;
+            background: green;
+            border:0;
+            cursor: pointer;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .show{
+            width: 100%;
+            background:#ccc;
+            flex-grow: 1;
+
+        }
+        .plan{
+            width:50%;
+            float:left;
+            height:auto;
+            background: #4f99ff;
+        }
+        .plan li{
+            float: left;
+            width: 100%;
+        }
+        .done{
+            width:50%;
+            float:right;
+            height:auto;
+            background: #b75b0d;
+        }
+        .done li{
+            float: left;
+            width: 100%;
+        }
+        .contentitle{
+            width:50%;
+            height: 20%;
+            color: red;
+            float: left;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="title">TODO LIST</div>
+<div class="inputarea">
+    <input type="text" id="text">
+    <input type="button" id="submit" value="提交">
+</div>
+<div class="show">
+    <div class="contentitle">未完成</div>
+    <div class="contentitle">已完成</div>
+    <ul class="plan">
+        <li>
+            <input type="checkbox">
+                <span contenteditable="true">23133232</span>
+                 <time>2017/5/3/ 15:24</time>
+        </li>
+    </ul>
+    <ul class="done">
+        <li>
+        <li>
+            <input type="checkbox">
+            <span contenteditable="true">23133232</span>
+            <time>2017/5/3/ 15:24</time>
+        </li>
+        </li>
+    </ul>
+</div>
+
+</body>
+<script>
+    var text=document.querySelector("#text");
+    var submit=document.querySelector("#submit");
+    var plan=document.querySelector(".plan");
+    var done=document.querySelector(".done");
+    //取得数据
+    function getData() {
+        return localStorage.todo?JSON.parse(localStorage.todo):[];
+    }
+    //保存数据
+    function saveData(data) {
+        localStorage.todo=JSON.stringify(data);
+    }
+    //绘制
+    function reWrite() {
+        var data=getData();
+        var str1="",str2="";
+        data.forEach(function (v,i) {
+            if(!v.done){
+                str1+=`<li id="${i}"><input type="checkbox" onfocus="changestate(this)"><span contenteditable="true" onblur="changecontent(this)">${v.content}</span><time>${time(v.time)}</time></li>`
+            }
+            else{
+                str2+=`<li id="${i}"><input type="checkbox" onfocus="del(this)"><span>${v.content}</span><time>${time(v.time)}</time></li>`
+            }
+
+        })
+        plan.innerHTML=str1;
+        done.innerHTML=str2;
+    }
+    reWrite();
+    //获取时间的函数
+    function time(t) {
+        var date=new Date();
+        date.setTime(t);//以毫秒设置date对象
+        var year=date.getFullYear();
+//        var month=(date.getMonth()+1)<10?"0"+(date.getMonth()+1):(date.getMonth()+1);
+//        var month=date.getMonth()+1;
+//        month=month<10:"0"+month:month;
+        var month=setZero(date.getMonth()+1);
+        var day=setZero(date.getDay());
+        var hour=setZero(date.getHours());
+        var min=setZero(date.getMinutes());
+        var sec=setZero(date.getSeconds());
+        return year+"/"+month+"/"+day+"/"+hour+":"+min+":"+sec;
+    }
+    //给时间前加0
+    function setZero(num) {
+        if(num<10){
+            return "0"+num;
+        }else{
+            return num;
+        }
+    }
+    reWrite();
+     //点击提交时 数据存储入未完成里面
+    submit.onclick=function () {
+        if(text.value==""){
+            return;
+        }
+        var val=text.value;
+        text.value="";
+        var data=getData();
+        var date=new Date();
+        var time=date.getTime();
+        data.push({content:val,time,done:false});//属性名：属性值   done开关
+        saveData(data);
+        reWrite();
+    }
+    //点击未完成的 移动到已完成里面
+    function changestate(ele) {
+        var id=ele.parentNode.id;
+        var data=getData();
+        data[id].done=true;
+        saveData(data);
+        reWrite();
+    }
+     //删除已完成的内容
+    function del(ele) {
+        var id=ele.parentNode.id;
+        var data=getData();
+        data.splice(id,1);
+        saveData(data);
+        reWrite();
+    }
+     //改变文本内容函数
+    function changecontent(ele) {
+        var id=ele.parentNode.id;
+        var val=ele.innerHTML;
+        var data=getData();
+        data[id].content=val;
+        saveData(data);
+        reWrite();
+    }
+</script>
+</html>

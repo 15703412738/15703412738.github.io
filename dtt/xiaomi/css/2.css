@@ -1201,6 +1201,7 @@ img{
 	left: 0;
 	margin: auto;
 	z-index: 5;
+	opacity: 0;
 }
 .neirong-bankuai-jiantouyou{
 	width: 20px;
@@ -1214,6 +1215,19 @@ img{
 	right: 0;
 	margin: auto;
 	z-index: 5;
+	opacity: 0;
+}
+.neirong-bankuai-box:hover .neirong-bankuai-jiantouyou{
+	opacity: 0.5;
+}
+.neirong-bankuai-box:hover .neirong-bankuai-jiantouzuo{
+	opacity: 0.5;
+}
+.neirong-bankuai-jiantouzuo:hover{
+	opacity: 1;
+}
+.neirong-bankuai-jiantouyou:hover{
+	opacity: 1;
 }
 .yanse{
 	font-size: 16px;

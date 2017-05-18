@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/shangehua.css">
+	<link rel="stylesheet" href="css/inner.css">
 	<title>个人主页</title>
 </head>
 <body>
@@ -110,7 +111,7 @@
 				</div>
 				<div class="jindutiao">
 					<div class="xiaobiaoti">
-						<p class="xiaozi-skill">Photoshop</p>
+						<p class="xiaozi-skill">JS</p>
 					</div>
 
 					<div class="jindu">
@@ -151,6 +152,63 @@
 		</div>
 	</div>
     </div>
+
+	<div class="section">
+		<div class="works">
+			<div class="nr-biaoti">
+				<p class="skill-zi"> My Portfulio</p>
+			</div>
+		<section id="content">
+			<div id="banners">
+				<div class="container">
+					<ul class="banners_cycle">
+						<li class="banners_item style-1 ">
+							<div class="tail">
+								<div class="inner"><i class="fontawesome-icon medium circle-yes icon-globe"></i>
+									<h4>ZIMU</h4>
+									<p>打字游戏</p>
+									<a href="../daziyouxi/DAZIYOUXI.html" class="button">进入</a> </div>
+							</div>
+						</li>
+						<li class="banners_item style-2 nomargin">
+							<div class="tail">
+								<div class="inner"><i class="fontawesome-icon medium circle-yes icon-lightbulb"></i>
+									<h4>SAOLEI</h4>
+									<p>扫雷游戏</p>
+									<a href="../saolei/5.9游戏扫雷.html" class="button">进入</a> </div>
+							</div>
+						</li>
+						<li class="banners_item style-3 ">
+							<div class="tail">
+								<div class="inner"><i class="fontawesome-icon medium circle-yes icon-link"></i>
+									<h4>DRAW</h4>
+									<p>绘图板</p>
+									<a href="../draw/5.6.html" class="button">进入</a> </div>
+							</div>
+						</li>
+						<li class="banners_item style-4 nomargin">
+							<div class="tail">
+								<div class="inner"><i class="fontawesome-icon medium circle-yes icon-hand-down"></i>
+									<h4>TODOLIST</h4>
+									<p>记事本</p>
+									<a href="../todoList/5.3daibanshixiang.html" class="button">进入</a> </div>
+							</div>
+						</li>
+						<li class="banners_item style-5 ">
+							<div class="tail">
+								<div class="inner"><i class="fontawesome-icon medium circle-yes icon-upload-alt"></i>
+									<h4>Grow.</h4>
+									<p>更多</p>
+									<a href="#" class="button">进入</a> </div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+       </div>
+	</div>
 
 	<div class="section">
 		<div class="works">
@@ -197,9 +255,9 @@
 					  </div>
 					  <div class="swiper-slide">
 						  <li class="zuopin1 g">
-							  <img src="img/tianmaoshouji.png" alt="">
+							  <img src="img/jingdong.png" alt="">
 							  <div class="zuopin-zhezhao">
-								  <a href="../tmphone/index.html"><p class="zhezhao-zi">天猫手机端</p></a>
+								  <a href="../jidong/index.html"><p class="zhezhao-zi">京东</p></a>
 							  </div>
 						  </li>
 					  </div>
@@ -207,15 +265,15 @@
 							  <li class="zuopin1 h">
 								  <img src="img/youyike.png" alt="">
 								  <div class="zuopin-zhezhao">
-									  <a href="../uek/html/index.html"><p class="zhezhao-zi">优逸客</p></a>
+									  <a href="../shafa/index.html"><p class="zhezhao-zi">沙发</p></a>
 								  </div>
 							  </li>
 						  </div>
 					  <div class="swiper-slide">
 						  <li class="zuopin1 a">
-							  <img src="img/pingguo.png" alt="">
+							  <img src="img/weierjia.png" alt="">
 							  <div class="zuopin-zhezhao f">
-								  <a href="../apple/index.html"><p class="zhezhao-zi">苹果响应式</p></a>
+								  <a href="../zhengzhanWeierjia/html/index.html"><p class="zhezhao-zi">威尔佳</p></a>
 							  </div>
 						  </li>
 					  </div>
@@ -334,19 +392,19 @@
 			'navigationPosition': 'right',
 			'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
 			fixedElements:".next",
-
 			afterLoad:function (an,index) {
 				if(index==2){
 					$(".jindu1").css("width","89%");
 					$(".jindu2").css("width","95%");
 					$(".jindu3").css("width","91%");
 					$(".jindu4").css("width","90%");
-				}else if(index==4){
+				}else if(index==5){
 					$(".next").css("transform","rotate(-90deg)").addClass("active");
+
 				}
 			},
 			onLeave:function (index,nextIndex,diraction) {
-				if(index==4){
+				if(index==5){
 					$(".next").css("transform","rotate(90deg)").removeClass("active");
 				}
 			}
@@ -378,4 +436,55 @@
 
 	})
 </script>
+
+<script>
+	// initialise plugins
+	jQuery(function(){
+	// Banners button
+	jQuery('ul.banners_cycle li').mouseenter(function(){
+	jQuery(this).find('.button').stop(false,true).fadeIn();
+	})
+	jQuery('ul.banners_cycle li').mouseleave(function(){
+	jQuery(this).find('.button').stop(false,true).fadeOut();
+	});
+
+	// Banners
+	jQuery('ul.banners_cycle li:not(.style-1)').mouseenter(function(){
+	jQuery(this).css('z-index','6');
+	jQuery(this).stop(false, true).animate({right:'-64px'}, {easing:"swing", duration: 300});
+	jQuery(this).animate({right:'0'});
+	});
+	jQuery('ul.banners_cycle li:not(.style-1)').mouseleave(function(){
+	jQuery(this).stop(false, true).animate({right:'-64px'});
+	jQuery(this).stop(false, true).animate({right:'0'}, 'slow');
+	});
+
+	// Banner #2
+	jQuery('ul.banners_cycle li.style-2').mouseleave(function(){
+	jQuery(this).css('z-index','5');
+	});
+	// Banner #3
+	jQuery('ul.banners_cycle li.style-3').mouseleave(function(){
+	jQuery(this).css('z-index','4');
+	});
+	// Banner #4
+	jQuery('ul.banners_cycle li.style-4').mouseleave(function(){
+	jQuery(this).css('z-index','3');
+	});
+	// Banner #5
+	jQuery('ul.banners_cycle li.style-5').mouseleave(function(){
+	jQuery(this).css('z-index','2');
+	});
+	// Banner #6
+	jQuery('ul.banners_cycle li.style-6').mouseenter(function(){
+	jQuery('body').css('overflow-x','hidden');
+	});
+	jQuery('ul.banners_cycle li.style-6').mouseleave(function(){
+	jQuery(this).css('z-index','1');
+	jQuery('body').css('overflow-x','hidden');
+	});
+	});
+</script>
+
+
 </html>
